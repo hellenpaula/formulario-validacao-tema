@@ -1,0 +1,189 @@
+/* variáveis de cores padrões:*/
+:root {
+    --background: rgb(230, 230, 230);
+    --text: black;
+    --border: rgb(161, 161, 161);
+    --form: rgba(249, 249, 249, 0.911);
+    --button: rgba(54, 54, 216, 0.805);
+    --buttonHover: rgba(38, 38, 158, 0.905);
+    --textErro: red;
+    --textButton: white;
+
+}
+
+/* atributo com variáveis aplicadas apenas no tema dark:*/
+[data-tema="escuro"] {
+    --background: #0b1220;
+    --text: white;
+    --border: #1f2937;
+    --form: #111827;
+    --button: #38bdf8;
+    --buttonHover: #2c9bcb;
+    --textErro: rgb(157, 71, 222);
+    --textButton: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text);
+    background-color: var(--background);
+
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 50px;
+}
+
+.menuHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 300px;
+    width: 40em;
+    
+}
+
+.tituloHeader h1 {
+    font-size: 1.8em;
+}
+
+
+.btnAlterarTema button {
+    padding:10px 15px;
+    font-size: 1em;
+    background: var(--background);
+    color: var(--text);
+    border: 0.4px solid var(--border);
+    border-radius: 7px;
+    cursor: pointer;
+   
+}
+
+.btnAlterarTema button:hover {
+    background-color: var(--form);
+}
+
+
+.containerForm {
+    border: 0.4px solid var(--border);
+    border-radius: 7px ;
+    /* justify-content: center; */
+    max-width: 37em;
+    width: 100%;
+    
+    /* min-width: 100px; */
+    /* width: 21em; */
+    justify-content: center;
+    padding: 50px 19px 40px 20px;
+    margin:10px 10px 70px 10px;
+    background: var(--form);
+}
+
+.containerForm .textoForm {
+    margin-bottom: 20px;
+}
+.textoForm h2 {
+    padding-bottom: 10px;
+
+}
+
+.textoForm p {
+    font-size: 17px;
+}
+
+.divAreaFormulario {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.areaInput {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.areaInput h3 {
+    margin-bottom: 13px;
+}
+
+.areaInput .inputForm {
+    padding: 12px 10px;
+    border-radius: 4px;
+    border:0.4px solid var(--border);
+    background-color: var(--background);
+    color: var(--text);
+    
+}
+
+/* referenciei as duas classes para receberem a mesma configutação padrão no início */
+.areaInput .errorN, .errorE {
+    
+    display: none;
+}
+
+.msgError {
+    display: flex;
+    color: var(--textErro);
+    padding: 10px 0 5px 0;
+    font-size:16px ;
+}
+
+
+.buttonForm {
+    width: 100%;
+    
+}
+
+.buttonForm button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px ;
+    border: none;
+    background-color: var(--button);
+    color: var(--textButton);
+    font-size: 17px;
+    cursor: pointer;
+    
+}
+
+.buttonForm button:hover {
+    background-color: var(--buttonHover);
+}
+
+.msgLogin {
+    color: rgb(157, 71, 222);
+    align-self: center;
+    margin-top: 20px;
+}
+
+footer {
+    border-top : 1px solid var(--border);
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px 0 40px 0;
+    color: var(--text);
+}
+
+
+@media screen and (min-width: 700px){
+   
+}
+
