@@ -82,12 +82,8 @@ body {
 .containerForm {
     border: 0.4px solid var(--border);
     border-radius: 7px ;
-    /* justify-content: center; */
     max-width: 37em;
     width: 100%;
-    
-    /* min-width: 100px; */
-    /* width: 21em; */
     justify-content: center;
     padding: 50px 19px 40px 20px;
     margin:10px 10px 70px 10px;
@@ -181,9 +177,3 @@ footer {
     padding: 20px 0 40px 0;
     color: var(--text);
 }
-
-
-@media screen and (min-width: 700px){
-   
-}
-
